@@ -49,5 +49,3 @@ Each row represent a data point. The data is collected at every 15 minutes inter
 
 ### Implication
 The low delta temperature symptoms can typically be remedied by reducing the speed of the water pump or increasing the water setpoint of the chiller. With the conversion from occurrence instances to operating duration, the potential saving in energy consumption can be calculated with respect to each active control strategy. It can then be translated into the expected dollar amount in utility cost reduction.
-
-![chiller low delta T diagnostic viz]()
