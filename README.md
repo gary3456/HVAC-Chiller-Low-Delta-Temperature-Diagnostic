@@ -7,47 +7,58 @@
 
 ## Case Study: Low Delta Temperature Symptoms in Chiller System Diagnostic
 
+## Table of Content
+- [Case Study: Low Delta Temperature Symptoms in Chiller System Diagnostic](#case-study-low-delta-temperature-symptoms-in-chiller-system-diagnostic)
+- [Table of Content](#table-of-content)
+- [Tableau Dashboard](#tableau-dashboard)
+  - [Background Information](#background-information)
+  - [Business Question](#business-question)
+  - [Data Source](#data-source)
+  - [Data Cleaning \& Preprocessing](#data-cleaning--preprocessing)
+  - [Data Analysis](#data-analysis)
+    - [Key Questions](#key-questions)
+    - [Results](#results)
+  - [Implications](#implications)
+
+
 ## [Tableau Dashboard](https://public.tableau.com/views/ChillerSystemDeltaTCondition/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ![dashboard screenshot](https://github.com/user-attachments/assets/9f96c9ee-97c7-4573-aa86-49a70753aacd)
 
-### Background information
-In a HVAC system, water circulating through piping distributed across the buildings and facilities helps regular space temperatures within a designated range by releasing the cooling energy and absorbing the heat from the environment. The role of a chiller is to bring the water temperature to a predetermined setpoint that is considered adequate in supporting the cooling demand of the facillities.
+### Background Information
+In HVAC systems, water circulates through a network of pipes across buildings and facilities to regulate indoor temperatures. This circulation works by releasing cooling energy and absorbing heat from the environment. The chiller's primary role is to adjust the water temperature to a predetermined setpoint that effectively meets the cooling demand of the facilities.
 
 ### Business Question
-Typically, if the water temperature difference between receiving end and supplying end is lower than 3°C it indicates the presence of energy wastage. At the same time, it also presents an energy saving opportunity by actively manipulating the setpoint of the chiller in the HVAC system.
+When the temperature difference between the water's receiving and supplying ends is less than 3°C, it often indicates energy wastage. This scenario presents an opportunity to optimize energy consumption by adjusting the chiller’s setpoint.
 
-💡 *BUSINESS TASK*: Identify the **opportunities** lie in the HVAC system that can be optimized to reduce the **energy comsumption cost**.
+💡 **Business Task:** Identify opportunities within the HVAC system to optimize energy usage and reduce energy consumption costs.
 
 ### Data Source
-The dataset is a CSV flie, comprise of the historical data of a chiller system spanning across several months. It contains a **Timestamp** column and up to hundreds of columns, each representing a IoT sensor in the chiller system, for instance
+The dataset is a CSV file extracted from a production Building Management System (BMS). It comprises historical data from a chiller system spanning several months. The dataset includes a **Timestamp** column and up to several hundred additional columns, each corresponding to an IoT sensor in the chiller system. For example:
+- **Chiller 1:** Chilled Water Return Temperature
+- **Chiller 2:** Chilled Water Supply Temperature
+- **Chilled Water Pump 1:** Chilled Water Pump Speed
 
-- Chiller 1: Chilled Water Return Temperature
-- Chiller 2: Chilled Water Supply Temperature
-- Chilled Water Pump 1: Chilled Water Pump Speed
+Each row represents a data point, with readings collected at 15-minute intervals.
 
-Each row represent a data point. The data is collected at every 15 minutes interval.
-
-### Data Cleaning | Data Preprocessing
-- Data loading and inspection
-- Remove duplicated timestamp
-- Inspect Missing Data
-- Data Imputation
-- Data Formatting
+### Data Cleaning & Preprocessing
+- **Data Loading and Inspection:** Import the data and perform an initial review.
+- **Remove Duplicate Timestamps:** Ensure each timestamp is unique.
+- **Identify Missing Data:** Detect any gaps in the data.
+- **Data Imputation:** Fill in missing values where appropriate.
+- **Data Formatting:** Convert and standardize data types for analysis.
 
 ### Data Analysis
 
-#### Questions
-1. How often does the low delta temperature symptom occur?
-2. When does the low delta temperature symptom mostly likely to happen?
-3. Is the occurrence limited to a specific configuration of chiller setting?
+#### Key Questions
+1. **Frequency:** How often does the low delta temperature symptom occur?
+2. **Timing:** At what times does the low delta temperature symptom most frequently occur?
+3. **Configuration:** Is the symptom limited to a specific chiller configuration?
 
-#### Result
-- Over the months of August to November, there are repeated occurrence of low delta temperature symptom, especially during night time after working hours or times which low people traffic is expected.
-- Low delta temperature symptom is found across all chillers. It indicates that the issue is not mechanical, but operational.
-- Chiller 1 and 2 are of the worst in having the low delta temperature symptom.
+#### Results
+- **Temporal Occurrence:** From August to November, repeated instances of the low delta temperature symptom were observed—especially during nighttime hours or periods of low occupancy.
+- **Widespread Issue:** The symptom was detected across all chillers, suggesting an operational rather than a mechanical issue.
+- **Affected Units:** Chiller 1 and Chiller 2 were most frequently associated with the low delta temperature symptom.
 
-### Implication
-The low delta temperature symptoms can typically be remedied by reducing the speed of the water pump or increasing the water setpoint of the chiller. With the conversion from occurrence instances to operating duration, the potential saving in energy consumption can be calculated with respect to each active control strategy. It can then be translated into the expected dollar amount in utility cost reduction.
-
-![chiller low delta T diagnostic viz]()
+### Implications
+The low delta temperature symptom can typically be remedied by either reducing the water pump speed or increasing the chiller's water setpoint. By converting the frequency of these occurrences into operating durations, we can estimate the potential energy savings for each control strategy. These savings can then be translated into expected reductions in utility costs.
