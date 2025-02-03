@@ -8,17 +8,15 @@
 ## Case Study: Low Delta Temperature Symptoms in Chiller System Diagnostic
 
 ## Table of Content
-- [Case Study: Low Delta Temperature Symptoms in Chiller System Diagnostic](#case-study-low-delta-temperature-symptoms-in-chiller-system-diagnostic)
-- [Table of Content](#table-of-content)
 - [Tableau Dashboard](#tableau-dashboard)
-  - [Background Information](#background-information)
-  - [Business Question](#business-question)
-  - [Data Source](#data-source)
-  - [Data Cleaning \& Preprocessing](#data-cleaning--preprocessing)
-  - [Data Analysis](#data-analysis)
-    - [Key Questions](#key-questions)
-    - [Results](#results)
-  - [Implications](#implications)
+- [Background Information](#background-information)
+- [Business Question](#business-question)
+- [Data Source](#data-source)
+- [Data Cleaning \& Preprocessing](#data-cleaning--preprocessing)
+- [Data Analysis](#data-analysis)
+- [Key Questions](#key-questions)
+- [Results](#results)
+- [Implications](#implications)
 
 
 ## [Tableau Dashboard](https://public.tableau.com/views/ChillerSystemDeltaTCondition/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
