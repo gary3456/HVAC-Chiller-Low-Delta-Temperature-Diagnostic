@@ -9,7 +9,7 @@
 
 ## [Tableau Dashboard](https://public.tableau.com/views/ChillerSystemDeltaTCondition/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![dashboard screenshot](https://github.com/gary3456/HVAC-Chiller-Low-Delta-Temperature-Diagnostic/blob/26e9f1023ce29d5ab4f325ad0fac9cb49f76fbaa/viz/chiller%20low%20delta%20T%20diagnostic%20viz.png)
+![dashboard screenshot](https://github.com/user-attachments/assets/9f96c9ee-97c7-4573-aa86-49a70753aacd)
 
 ### Background information
 In a HVAC system, water circulating through piping distributed across the buildings and facilities helps regular space temperatures within a designated range by releasing the cooling energy and absorbing the heat from the environment. The role of a chiller is to bring the water temperature to a predetermined setpoint that is considered adequate in supporting the cooling demand of the facillities.
@@ -50,3 +50,4 @@ Each row represent a data point. The data is collected at every 15 minutes inter
 ### Implication
 The low delta temperature symptoms can typically be remedied by reducing the speed of the water pump or increasing the water setpoint of the chiller. With the conversion from occurrence instances to operating duration, the potential saving in energy consumption can be calculated with respect to each active control strategy. It can then be translated into the expected dollar amount in utility cost reduction.
 
+![chiller low delta T diagnostic viz]()
